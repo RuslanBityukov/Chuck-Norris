@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB24A6872561758800C787ED /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24A6862561758800C787ED /* Model.swift */; };
+		AB24A68A256179BB00C787ED /* ChuckNorrisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24A689256179BB00C787ED /* ChuckNorrisViewController.swift */; };
+		AB24A6902561DA1200C787ED /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24A68F2561DA1200C787ED /* NetworkManager.swift */; };
 		ABF0FC142560112700A60C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF0FC132560112700A60C4F /* AppDelegate.swift */; };
 		ABF0FC162560112700A60C4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF0FC152560112700A60C4F /* SceneDelegate.swift */; };
-		ABF0FC182560112700A60C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF0FC172560112700A60C4F /* ViewController.swift */; };
 		ABF0FC1B2560112700A60C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF0FC192560112700A60C4F /* Main.storyboard */; };
 		ABF0FC1D2560112800A60C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF0FC1C2560112800A60C4F /* Assets.xcassets */; };
 		ABF0FC202560112800A60C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF0FC1E2560112800A60C4F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB24A6862561758800C787ED /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AB24A689256179BB00C787ED /* ChuckNorrisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisViewController.swift; sourceTree = "<group>"; };
+		AB24A68F2561DA1200C787ED /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		ABF0FC102560112700A60C4F /* Chuck Norris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chuck Norris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF0FC132560112700A60C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABF0FC152560112700A60C4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABF0FC172560112700A60C4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABF0FC1A2560112700A60C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABF0FC1C2560112800A60C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABF0FC1F2560112800A60C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				ABF0FC132560112700A60C4F /* AppDelegate.swift */,
 				ABF0FC152560112700A60C4F /* SceneDelegate.swift */,
-				ABF0FC172560112700A60C4F /* ViewController.swift */,
+				AB24A689256179BB00C787ED /* ChuckNorrisViewController.swift */,
+				AB24A68F2561DA1200C787ED /* NetworkManager.swift */,
+				AB24A6862561758800C787ED /* Model.swift */,
 				ABF0FC192560112700A60C4F /* Main.storyboard */,
 				ABF0FC1C2560112800A60C4F /* Assets.xcassets */,
 				ABF0FC1E2560112800A60C4F /* LaunchScreen.storyboard */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABF0FC182560112700A60C4F /* ViewController.swift in Sources */,
+				AB24A68A256179BB00C787ED /* ChuckNorrisViewController.swift in Sources */,
 				ABF0FC142560112700A60C4F /* AppDelegate.swift in Sources */,
+				AB24A6902561DA1200C787ED /* NetworkManager.swift in Sources */,
 				ABF0FC162560112700A60C4F /* SceneDelegate.swift in Sources */,
+				AB24A6872561758800C787ED /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "hw.Chuck-Norris";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "hw.Chuck-Norris";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

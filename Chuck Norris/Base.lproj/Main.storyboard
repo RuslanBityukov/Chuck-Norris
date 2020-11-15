@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z8u-gx-vbJ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Chuck Norris View Controller-->
+        <scene sceneID="PkB-KS-Hjn">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="z8u-gx-vbJ" customClass="ChuckNorrisViewController" customModule="Chuck_Norris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gfy-I2-tgl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nuclear-bomb-explosion-mushroom-cloud_iphone_1080x1920" translatesAutoresizingMaskIntoConstraints="NO" id="gzt-gn-hSr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-Qj-smG">
+                                <rect key="frame" x="101" y="40" width="173" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="2wQ-g2-BRD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPa-bF-Gx1">
+                                <rect key="frame" x="16" y="241" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" red="0.39056428108808294" green="0.0" blue="0.070858300806128038" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gn-Mv-Ah8">
+                                <rect key="frame" x="140" y="585" width="95" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="MY0-r0-wO4"/>
+                                </constraints>
+                                <state key="normal" title="Explosive joke" image="depositphotos_6225322-stock-illustration-launch-button">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttomRandomTap" destination="z8u-gx-vbJ" eventType="touchUpInside" id="y8c-cM-V5b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4NX-au-aUt"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="gYR-Qj-smG" firstAttribute="leading" secondItem="4NX-au-aUt" secondAttribute="leading" constant="101" id="1DH-2t-4mZ"/>
+                            <constraint firstItem="9Gn-Mv-Ah8" firstAttribute="leading" secondItem="4NX-au-aUt" secondAttribute="leading" constant="140" id="231-qy-sxe"/>
+                            <constraint firstItem="4NX-au-aUt" firstAttribute="trailing" secondItem="gYR-Qj-smG" secondAttribute="trailing" constant="101" id="5Ag-UT-ncA"/>
+                            <constraint firstAttribute="bottom" secondItem="gzt-gn-hSr" secondAttribute="bottom" id="5Yh-Nf-i0Z"/>
+                            <constraint firstItem="4NX-au-aUt" firstAttribute="trailing" secondItem="9Gn-Mv-Ah8" secondAttribute="trailing" constant="140" id="CAg-l8-ocf"/>
+                            <constraint firstItem="MPa-bF-Gx1" firstAttribute="top" secondItem="gYR-Qj-smG" secondAttribute="bottom" constant="30" id="DzY-CE-vqK"/>
+                            <constraint firstItem="4NX-au-aUt" firstAttribute="bottom" secondItem="9Gn-Mv-Ah8" secondAttribute="bottom" constant="20" id="Mbp-EW-eyL"/>
+                            <constraint firstItem="MPa-bF-Gx1" firstAttribute="leading" secondItem="4NX-au-aUt" secondAttribute="leading" constant="16" id="N6J-xE-ixM"/>
+                            <constraint firstItem="gzt-gn-hSr" firstAttribute="top" secondItem="Gfy-I2-tgl" secondAttribute="top" id="P2H-26-s8T"/>
+                            <constraint firstItem="gzt-gn-hSr" firstAttribute="trailing" secondItem="4NX-au-aUt" secondAttribute="trailing" id="dab-Yx-he4"/>
+                            <constraint firstItem="gzt-gn-hSr" firstAttribute="leading" secondItem="4NX-au-aUt" secondAttribute="leading" id="euR-9p-EWn"/>
+                            <constraint firstItem="4NX-au-aUt" firstAttribute="trailing" secondItem="MPa-bF-Gx1" secondAttribute="trailing" constant="16" id="jnW-aa-374"/>
+                            <constraint firstItem="gYR-Qj-smG" firstAttribute="top" secondItem="4NX-au-aUt" secondAttribute="top" constant="40" id="qJ5-NL-1HZ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ftU-5V-fo4"/>
+                    <connections>
+                        <outlet property="imageView" destination="gYR-Qj-smG" id="Xgg-Pj-hal"/>
+                        <outlet property="label" destination="MPa-bF-Gx1" id="zdi-tW-7zj"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tQ-M5-xx1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="730.39999999999998" y="74.212893553223395"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Nuclear-bomb-explosion-mushroom-cloud_iphone_1080x1920" width="1080" height="1920"/>
+        <image name="depositphotos_6225322-stock-illustration-launch-button" width="1024" height="1024"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
